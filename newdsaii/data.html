@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <nav>
+        <img src="logo.JPG" alt="DSAII" height="35px" style="float: left">
+        <a href="index.html">Home</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Event</a>
+    </nav>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            color: black;
+            box-sizing: border-box;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px 16px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 8px 14px;
+            background-color: #f44336;
+            color: black;
+        }
+
+        .container {
+            padding: 10px;
+            display: inline;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        .modal {
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+            height: 400px;
+        }
+
+        .modal-content {
+            box-shadow: 5px 5px 20px 10px black;
+            background-color: rgba(255, 255, 255, 0.205);
+            width: 260px;
+            height: 340px;
+            border-radius: 20px;
+            animation: animatezoom 0.7s
+        }
+
+        .bloc {
+            background-color: white;
+            border-radius: 20px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            animation: animatezoom 0.7s
+        }
+
+        label b {
+            color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body class="banner" onload="start()">
+    <!-- <iframe id="ifrm"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRz8shvlb9dfuoPo31fjxSM98znJV79eaYy9DfVP32YARSsp_4nZlbNc-EDYWyfI9B5UKh14MMwBcgh/pubhtml?gid=2022526145&amp;single=true&amp;widget=true&amp;headers=false"
+        width="100%" height="600px"></iframe> -->
+    <div style="padding-top: 100px;">
+        <div id="msg1" class="bloc">
+            Adminstration are required to login for datasheet...!<br><br>
+            <button onclick="cl()" style="width:auto;border-radius: 10px;font-size: 20px;">Login</button>
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content">
+
+            <div class="container">
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required id="uname">
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required id="psw">
+
+                <button type="submit" onclick="log()">Login</button>
+
+                <button type="button" onclick="cnl()" class="cancelbtn">Cancel</button><br><br>
+
+                <u onclick="show()">Forgot Username and Password</u>
+
+            </div>
+        </form>
+    </div>
+    <center>
+        <img class="zoom" src="https://media1.giphy.com/avatars/HeyAutoHQ/DgfrJNR8oUyv.gif" height="300px"
+            style="margin-top:20px" id="robo">
+    </center>
+
+    <script>
+
+        function show() {
+            console.log("Username - dsaii")
+            console.log("Password - 6207")
+        }
+
+        function start() {
+            document.getElementById('ifrm').style.display = 'none';
+            document.getElementById('id01').style.display = 'none';
+            var modal = document.getElementById('id01');
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+
+        function cl() {
+            document.getElementById('msg1').style.display = 'none';
+            document.getElementById('id01').style.display = 'block';
+            document.getElementById('robo').style.display = 'none'
+        }
+        function cnl() {
+            document.getElementById('id01').style.display = 'none'
+            document.getElementById('msg1').style.display = 'block'
+            document.getElementById('robo').style.display = 'block'
+        }
+
+        function log() {
+            var n = document.getElementById('uname').value;
+            var p = document.getElementById('psw').value;
+
+            if (n == "dsaii" && p == 6207) {
+                window.open("https://docs.google.com/spreadsheets/d/e/2PACX-1vTaIMAOvs1G8AoS0UEtH5bTxLEPVueaZ4mPmp3JOGO3UIsEC-uDlTDOEadFjG9x5uMNcN3DIPPnYodb/pubhtml")
+            }
+            else {
+                alert("Invalid Username and Password...!")
+            }
+        }
+    </script>
+</body>
+
+</html>
