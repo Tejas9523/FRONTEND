@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Project</a>
+    </nav>
+    <script>
+        function op() {
+            myWindow = window.open("https://script.google.com/macros/s/AKfycbwuKnmGerEWMZls3nCGPcF9I2rzWfDLrhjdc-ZBZHOhYbsMCgHEfJGH_w8A1wg5N6E_Vw/exec", "", "width=700,height=700")
+            document.getElementById("reg").window.open("https://script.google.com/macros/s/AKfycbwuKnmGerEWMZls3nCGPcF9I2rzWfDLrhjdc-ZBZHOhYbsMCgHEfJGH_w8A1wg5N6E_Vw/exec", "", "width=700,height=700")
+        }
+    </script>
+</head>
+
+<body class="banner" onload="op()">
+    <center class="content" style="width:100%;padding:0%;margin-bottom: 0%;position: absolute;">
+        Please make sure that pop-up is not blocked.<br>
+        If unable to open registration form click below to Register...!
+        <h3 id="reg" onclick="op()" style="padding-top: 100px;color: aqua;"><u>Register Here</u></h3>
+    </center>
+</body>
+
+</html>

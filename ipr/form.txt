@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Team">Team</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Project</a>
+    </nav>
+
+    <script>
+
+    </script>
+
+
+</head>
+
+<body class="banner">
+    <div>
+        <form method="post"
+            action="https://script.google.com/macros/s/AKfycbwTUWbvBnubSZIujASRWWmn1BsmEPowmt0prN7XfznmokTsCumK2IVsTNBndtamdGsg1w/exec"
+            name="contactform" id="contactform">
+            <div style="background-color: rgba(149, 138, 138, 0.641);
+            box-shadow: 0px 0px 10px 5px black;
+            padding-bottom: 30px;padding-top: 20px;border-radius: 20px;">
+                <h1>Enter Idea Details</h1>
+                <input type="text" placeholder="Idea Title" name="idea title" style="width: 700px" required>
+                <input type="text" placeholder="Upload Poster (pdf only, max 2mb)" readonly
+                    style="background-color: rgb(200, 254, 200);font-size: 17px;">
+                <input type="file" accept=".pdf">
+                <textarea placeholder="  Idea Description ( max 200 words )" name="idea description" required
+                    maxlength="200"></textarea>
+
+
+                <input class="f2input" type="text" placeholder="Full Name (Team Leader )" name="leader" required>
+                <select name="branch1">
+                    <option value="select"> Branch</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="CS">CS</option>
+                    <option value="IT">IT</option>
+                    <option value="ENTC">ENTC</option>
+                    <option value="AR">AR</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+                <input class="f2input" type="text" placeholder="Full Name ( Member-2 )" name="member2">
+                <select name="branch2">
+                    <option value="select"> Branch</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="CS">CS</option>
+                    <option value="IT">IT</option>
+                    <option value="ENTC">ENTC</option>
+                    <option value="AR">AR</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+                <input class="f2input" type="text" placeholder="Full Name ( Member-3 )" name="member3">
+                <select name="branch3">
+                    <option value="select"> Branch</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="CS">CS</option>
+                    <option value="IT">IT</option>
+                    <option value="ENTC">ENTC</option>
+                    <option value="AR">AR</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+                <input class="f2input" type="text" placeholder="Full Name ( Member-4 )" name="member4">
+                <select name="branch4">
+                    <option value="select"> Branch</option>
+                    <option value="AIDS">AIDS</option>
+                    <option value="CS">CS</option>
+                    <option value="IT">IT</option>
+                    <option value="ENTC">ENTC</option>
+                    <option value="AR">AR</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+                <button class="button1" type="submit" value="Submit" name="submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+            </div>
+        </form>
+    </div> -->
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTUWbvBnubSZIujASRWWmn1BsmEPowmt0prN7XfznmokTsCumK2IVsTNBndtamdGsg1w/exec'
+        const form = document.forms['contactform']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thank you! your form is submitted successfully."))
+                .then(() => { window.location.reload(); })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+
+    </script> -->
+
+</body>
+
+</html>

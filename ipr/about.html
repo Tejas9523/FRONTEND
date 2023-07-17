@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+        <a href="form.html">Project</a>
+    </nav>
+    <script>
+        function pdf() {
+            window.open("https://www.bits-pilani.ac.in/uploads/Patent_ManualOct_25th_07.pdf")
+        }
+        function clgipr() {
+            window.open("https://engg.dypvp.edu.in/ipr/")
+        }
+        function clg() {
+            window.open("https://engg.dypvp.edu.in/")
+        }
+        function on() {
+            document.getElementById('ab').style.display = 'block'
+            document.getElementById('mem').style.display = 'none'
+        }
+    </script>
+</head>
+
+<body class="banner" onload="on()">
+    <div id="ab">
+        <center class="about">
+            <h3 class="dsaii"><i>IPR</i></h3>is a Cell founded by a group of Second-year students<br><br>
+            Who want to make engineering more intersting for every student in <i><b><a href="" onclick="clg()"
+                        class="clglink"> DY Patil Institute of
+                        Technology.</a></b></i><br><br>
+            We at IPR Cell, want to help our peers to grow and reach their maximum potential. <br><br> know one person
+            can’t
+            make a huge difference but together we can ! IPR Cell is fresh and new and aims for betterment of ourselves
+            and
+            everyone who is a part of it!<br><br>
+            Not only that but also we conduct interactive workshops to teach everything in the most effective
+            way <a onclick="pdf()"><u style="color:chocolate">More
+                    about
+                    IPR</u></a><br><br>
+            Learn more <i><a style="color: chartreuse" onclick="clgipr()">About us</a></i><br>
+            <div style="padding-top:20px;padding-bottom: 20px;">
+                <a><img src=" in.png" height="30px" width="30px"></a>
+                <a><img src="tweet.png" height="30px" width="30px"></a>
+                <a><img src="face.jpg" height="30px" width="30px"></a>
+                <a><img src="insta.png" height="30px" width="30px"></a>
+            </div>
+
+        </center>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
